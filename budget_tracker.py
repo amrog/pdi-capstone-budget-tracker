@@ -1,7 +1,3 @@
-#def menu(a):
- #   return input(a)
-
-
 def set_budget():
     """Allows the user to set a monthly budget."""
     while True:
