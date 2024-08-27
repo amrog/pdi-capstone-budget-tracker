@@ -12,14 +12,14 @@ def set_budget():
 
 def add_expense():
     """Allows the user to add a new expense."""
-    description = input("Enter expense description: ")
     while True:
+        description = input("Enter expense description: ").strip()
         try:
             amount = float(input("Enter expense amount: "))
-            if amount > 0:
+            if amount > 0 and description:
                 return description, amount
             else:
-                print("Expense amount must be a positive number. Please try again.")
+                print("Expense amount must be a positive number and there should be a description. Please try again.")
         except ValueError:
             print("Invalid input. Please enter a number.")
 
