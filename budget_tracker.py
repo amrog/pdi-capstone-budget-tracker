@@ -10,7 +10,7 @@ def set_budget():
         except ValueError:
             print("Invalid input. Please enter a number.")
 
-def add_expense():
+def get_expense_details():
     """Allows the user to add a new expense."""
     while True:
         description = input("Enter expense description: ").strip()
