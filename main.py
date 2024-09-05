@@ -37,7 +37,7 @@ def menu():
     while True:  # Loop until valid input is received
         choice = input(f"{prompt}: ").strip().upper()
         if choice in ["1", "2", "3", "4", "5", "Q"]:
-            #            return choice
+            #            return choiceAa
             #        choice = input(f"{prompt}: ").strip()
             #        if len(choice) == 1 and '1' <= choice <= '6':
             return choice
@@ -57,7 +57,7 @@ def expense_tracker():
         elif choice == "3":
             view_expenses(expenses)
         elif choice == "4":
-            total = calculate_total(expenses)
+            total = calculate_total(view_expenses)
             print(f"\nTotal expenses: ${total:.2f}")
         elif choice == "5":
             compare_with_budget(total, budget)

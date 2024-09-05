@@ -25,6 +25,7 @@ def add_expense():
 
 def view_expenses(expenses):
     """Displays all recorded expenses."""
+    print(type(expenses),expenses)
     if not expenses:
         print("No expenses recorded yet.")
     else:
